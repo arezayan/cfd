@@ -17,6 +17,7 @@ u=np.ones((ny,nx))
 #un=np.ones((ny,nx))
 u[int(0.5/dy):int(1/dy+1),int(0.5/dx):int(1/dx+1)]=2
 
+
 for n in range(nt):
     un=u.copy()
     row,col=u.shape
@@ -30,6 +31,9 @@ for n in range(nt):
             u[:, 0] = 1
             u[:, -1] = 1
 
+    #pyplot.figure()
+    #pyplot.plot(u)
+    #pyplot.savefig('plot')
 
 fig=pyplot.figure(figsize=(11,7),dpi=100)
 ax=fig.gca(projection='3d')

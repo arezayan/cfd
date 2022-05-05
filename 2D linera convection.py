@@ -30,6 +30,8 @@ for n in range(nt):
             u[-1, :] = 1
             u[:, 0] = 1
             u[:, -1] = 1
+  
+    
 
     #pyplot.figure()
     #pyplot.plot(u)
